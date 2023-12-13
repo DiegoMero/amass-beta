@@ -1,0 +1,26 @@
+$tifanny-blue: #75DDDD;
+$blue: #508991;
+$prussian-blue: #172A3A;
+$midnigth-green: #004346;
+$mint: #09BC8A;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $mint;
+  width: auto;
+  padding-right: 5%;
+  padding-left: 5%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    width: 100%;
+  }
+}
