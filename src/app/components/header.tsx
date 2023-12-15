@@ -10,6 +10,7 @@ export default function Header() {
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
       }}
+      className='header'
     >
       <h1>Lorem Ipsum</h1>
       <p>

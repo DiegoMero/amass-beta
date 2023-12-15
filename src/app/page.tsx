@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar"
 import Header from "./components/header"
+import About from "./components/about"
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Header />
+        <About />
       </main>
     </>
   )

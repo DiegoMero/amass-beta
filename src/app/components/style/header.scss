@@ -4,14 +4,14 @@ $prussian-blue: #172A3A;
 $midnigth-green: #004346;
 $mint: #09BC8A;
 
-section {
+.header {
+  margin-top: 68.813px;
   width: auto;
   height: 89.2vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-left: 5%;
   padding-right: 5%;
-  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +34,6 @@ section {
     border: none;
     border-radius: 10px;
     font-size: 20px;
-    
   }
 
   button:hover {
