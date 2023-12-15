@@ -1,10 +1,46 @@
+$tifanny-blue: #75DDDD;
+$blue: #508991;
+$prussian-blue: #172A3A;
+$midnigth-green: #004346;
+$mint: #09BC8A;
+
 section {
   width: auto;
   height: 89.2vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   h1 {
-    margin: 0;
+    margin-top: 10%;
+    font-size: 80px;
+    margin-bottom: 0;
   }
+
+  p {
+    margin-top: 1%;
+    font-size: 19px;
+  }
+
+  button {
+    padding: 1%;
+    background-color: $mint;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    
+  }
+
+  button:hover {
+    background-color: $blue;
+    cursor: pointer;
+    color: white;
+  }
+  
 }
