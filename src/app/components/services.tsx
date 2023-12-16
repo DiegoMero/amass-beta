@@ -18,7 +18,7 @@ export default function Services() {
         {repeticiones.map((numero) => (
           <div key={numero} className='service-container'>
             <div
-              className='image'
+              className='product-image'
               style={{
                 backgroundImage: `url(${productImage.src})`,
               }}

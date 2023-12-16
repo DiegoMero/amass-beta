@@ -4,48 +4,44 @@ $prussian-blue: #172A3A;
 $midnigth-green: #004346;
 $mint: #09BC8A;
 
-.services {
+.news {
+  background-color: $prussian-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 5%;
   padding-right: 5%;
+  padding-left: 5%;
 
   h2 {
+    color:white;
     font-size: 40px;
-    margin-bottom: 5%;
   }
 
-  .all-services {
+  .news-container {
     display: flex;
-    gap: 5%;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
 
-    .service-container {
-      width: auto;
-      border-radius: 50px;
-      background-color: #09BC8A;
-      padding: 2%;
+    .new-card {
+      display: flex;
+      height: 175px;
 
-      .product-image {
-        height: 200px;
+      .new-image {
+        width: 400px;
+        height: auto;
         background-size: 100% 100%;
-        border-radius: 10px;
       }
 
-      .service-information {
+      .new-info {
+        background-color: $mint;
+        padding: 1%;
+
         h3 {
-          font-size: 30px;
+          margin: 0;
+          font-size: 25px;
         }
-
-        ul {
-          display: flex;
-          flex-direction: column;
-          padding-left: 20px;
-
-          li {
-            padding: 2.5%;
-          }
-        }
+        
       }
     }
   }
@@ -65,3 +61,4 @@ $mint: #09BC8A;
     color: white;
   }
 }
+
