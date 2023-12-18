@@ -28,9 +28,15 @@ nav {
     padding-right: 5%;
 
     li {
-      cursor: pointer;
-      h3:hover {
-        text-decoration: underline;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+
+        h3:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
