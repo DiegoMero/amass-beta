@@ -1,0 +1,43 @@
+$tifanny-blue: #75DDDD;
+$blue: #508991;
+$prussian-blue: #172A3A;
+$midnigth-green: #004346;
+$mint: #09BC8A;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $mint;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  h1 {
+    padding-left: 5%;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 5%;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5%;
+
+    li {
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+
+        h3:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
