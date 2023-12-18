@@ -3,6 +3,7 @@ import Header from "./components/header"
 import About from "./components/about"
 import Services from "./components/services"
 import News from "./components/news"
+import Contact from "./components/contact"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <Services />
         <News />
+        <Contact />
       </main>
     </>
   )
