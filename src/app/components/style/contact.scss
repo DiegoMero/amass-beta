@@ -4,7 +4,7 @@ $prussian-blue: #172A3A;
 $midnigth-green: #004346;
 $mint: #09BC8A;
 
-.contact {
+#contact {
   padding-top: 2.5%;
   display: flex;
   padding-left: 5%;
@@ -64,6 +64,8 @@ $mint: #09BC8A;
       li {
         font-size: 17.5px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
       }
     }
   }

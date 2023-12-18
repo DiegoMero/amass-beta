@@ -12,7 +12,7 @@ export default function Services() {
 
 
   return (
-    <section className='services'>
+    <section id='services'>
       <h2>Servicios</h2>
       <div className='all-services'>
         {repeticiones.map((numero) => (

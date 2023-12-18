@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Contact() {
   return (
-    <section className='contact'>
+    <section id='contact'>
       <div className='contact-us-container'>
         <h2>Contacto</h2>
         <p>¿Necesitas más información? Llena este formulario y uno de nuestros asesores se pondra en contacto contigo.</p>

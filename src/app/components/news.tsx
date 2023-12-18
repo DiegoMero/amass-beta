@@ -11,7 +11,7 @@ export default function News() {
 
 
   return (
-    <section className='news'>
+    <section id='news'>
       <h2>Noticias</h2>
       <div className='news-container'>
         {repeticiones.map((numero) => (
