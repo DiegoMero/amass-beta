@@ -1,11 +1,13 @@
-footer {
-  background-color: #111111;
-  color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  footer {
+    background-color: #111111;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
