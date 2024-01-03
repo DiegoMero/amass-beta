@@ -95,6 +95,7 @@ $mint: #09BC8A;
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 10%;
 
     .contact-us-container {
 
@@ -102,8 +103,6 @@ $mint: #09BC8A;
         font-size: 30px;
         margin-bottom: 0;
       }
-
-      p {}
 
       form {
         display: flex;
@@ -158,7 +157,6 @@ $mint: #09BC8A;
     }
 
     .ubication {
-      flex: 1;
       padding: 1%;
 
       h2 {
