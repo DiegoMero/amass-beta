@@ -68,3 +68,70 @@ $mint: #09BC8A;
     }
   }
 }
+
+@media (max-width: 767px) {
+  #services {
+    padding-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 5%;
+    }
+
+    .all-services {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .service-container {
+        width: auto;
+        border-radius: 20px;
+        background-color: #09BC8A;
+        padding: 5%;
+
+        .product-image {
+          height: 200px;
+          background-size: 100% 100%;
+          border-radius: 10px;
+        }
+
+        .service-information {
+          h3 {
+            font-size: 30px;
+            margin: 0;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+
+            li {
+              padding: 2.5%;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      padding: 2.5%;
+      background-color: $mint;
+      border: none;
+      border-radius: 10px;
+      font-size: 25px;
+      margin: 5%;
+    }
+
+    button:active {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}

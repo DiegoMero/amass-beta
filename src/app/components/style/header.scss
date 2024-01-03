@@ -75,5 +75,11 @@ $mint: #09BC8A;
       border-radius: 10px;
       font-size: 20px;
     }
+
+    button:active {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
   }
 }
