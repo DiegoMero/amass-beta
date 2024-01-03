@@ -4,62 +4,119 @@ $prussian-blue: #172A3A;
 $midnigth-green: #004346;
 $mint: #09BC8A;
 
-#news {
-  background-color: $prussian-blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 2.5%;
-
-  h2 {
-    color:white;
-    font-size: 40px;
-  }
-
-  .news-container {
+@media (min-width: 768px) {
+  #news {
+    background-color: $prussian-blue;
     display: flex;
     flex-direction: column;
-    height: auto;
-    gap: 20px;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2.5%;
 
-    .new-card {
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    .news-container {
       display: flex;
-      height: 175px;
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
 
-      .new-image {
-        width: 400px;
-        height: auto;
-        background-size: 100% 100%;
-      }
+      .new-card {
+        display: flex;
+        height: 175px;
 
-      .new-info {
-        background-color: $mint;
-        padding: 1%;
-
-        h3 {
-          margin: 0;
-          font-size: 25px;
+        .new-image {
+          width: 400px;
+          height: auto;
+          background-size: 100% 100%;
         }
-        
+
+        .new-info {
+          background-color: $mint;
+          padding: 1%;
+
+          h3 {
+            margin: 0;
+            font-size: 25px;
+          }
+
+        }
       }
     }
-  }
 
-  button {
-    padding: 1%;
-    background-color: $mint;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    margin: 5%;
-  }
+    button {
+      padding: 1%;
+      background-color: $mint;
+      border: none;
+      border-radius: 10px;
+      font-size: 30px;
+      margin: 5%;
+    }
 
-  button:hover {
-    background-color: $blue;
-    cursor: pointer;
-    color: white;
+    button:hover {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
   }
 }
 
+@media (max-width: 767px) {
+  #news {
+    background-color: $prussian-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 10%;
+
+    h2 {
+      color: white;
+      font-size: 30px;
+    }
+
+    .news-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
+
+      .new-card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .new-image {
+          height: 200px;
+          background-size: 100% 100%;
+        }
+
+        .new-info {
+          background-color: $mint;
+          padding: 1%;
+        }
+      }
+    }
+
+    button {
+      padding: 5%;
+      background-color: $mint;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      margin: 5%;
+    }
+
+    button:active {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}

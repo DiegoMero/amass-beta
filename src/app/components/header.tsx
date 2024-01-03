@@ -16,9 +16,7 @@ export default function Header() {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Integer porttitor est sit amet pharetra blandit. 
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Pellentesque vestibulum vitae ipsum sed malesuada. 
-        Donec feugiat magna odio, ac finibus libero sagittis eu. 
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
       </p>
       <button className={inter.className}>Conoce más</button>  
     </section>

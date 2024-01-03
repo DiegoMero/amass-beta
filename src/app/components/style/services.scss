@@ -4,65 +4,134 @@ $prussian-blue: #172A3A;
 $midnigth-green: #004346;
 $mint: #09BC8A;
 
-#services {
-  padding-top: 2.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
-
-  h2 {
-    font-size: 40px;
-    margin-bottom: 5%;
-  }
-
-  .all-services {
+@media (min-width: 768px) {
+  #services {
+    padding-top: 2.5%;
     display: flex;
-    gap: 5%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 
-    .service-container {
-      width: auto;
-      border-radius: 50px;
-      background-color: #09BC8A;
-      padding: 2%;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 5%;
+    }
 
-      .product-image {
-        height: 200px;
-        background-size: 100% 100%;
-        border-radius: 10px;
-      }
+    .all-services {
+      display: flex;
+      gap: 5%;
 
-      .service-information {
-        h3 {
-          font-size: 30px;
+      .service-container {
+        width: auto;
+        border-radius: 50px;
+        background-color: #09BC8A;
+        padding: 2%;
+
+        .product-image {
+          height: 200px;
+          background-size: 100% 100%;
+          border-radius: 10px;
         }
 
-        ul {
-          display: flex;
-          flex-direction: column;
-          padding-left: 20px;
+        .service-information {
+          h3 {
+            font-size: 30px;
+          }
 
-          li {
-            padding: 2.5%;
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+
+            li {
+              padding: 2.5%;
+            }
           }
         }
       }
     }
-  }
 
-  button {
-    padding: 1%;
-    background-color: $mint;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    margin: 5%;
-  }
+    button {
+      padding: 1%;
+      background-color: $mint;
+      border: none;
+      border-radius: 10px;
+      font-size: 30px;
+      margin: 5%;
+    }
 
-  button:hover {
-    background-color: $blue;
-    cursor: pointer;
-    color: white;
+    button:hover {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #services {
+    padding-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 5%;
+    }
+
+    .all-services {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .service-container {
+        width: auto;
+        border-radius: 20px;
+        background-color: #09BC8A;
+        padding: 5%;
+
+        .product-image {
+          height: 200px;
+          background-size: 100% 100%;
+          border-radius: 10px;
+        }
+
+        .service-information {
+          h3 {
+            font-size: 25px;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+
+            li {
+              padding: 2.5%;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      padding: 2.5%;
+      background-color: $mint;
+      border: none;
+      border-radius: 10px;
+      font-size: 25px;
+      margin: 5%;
+    }
+
+    button:active {
+      background-color: $blue;
+      cursor: pointer;
+      color: white;
+    }
   }
 }
