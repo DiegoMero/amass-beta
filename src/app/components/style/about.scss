@@ -46,3 +46,44 @@ $mint: #09BC8A;
     }
   }
 }
+
+@media (max-width: 767px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $prussian-blue;
+    color: white;
+    padding: 5%;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .card {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        background-color: $mint;
+        border-radius: 25px;
+        gap: 0;
+
+        h3 {
+          margin: 0;
+          font-size: 25px;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
