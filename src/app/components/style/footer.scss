@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   footer {
-    background-color: #111111;
+    background-color: #231f20;
     color: white;
     padding-left: 5%;
     padding-right: 5%;
@@ -9,12 +9,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .footer-logo {
+      background-size: 100% 100%;
+      width: 85px;
+      height: 93px;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
   }
 }
 
 @media (max-width: 767px) {
   footer {
-    background-color: #111111;
+    background-color: #231f20;
     color: white;
     padding-left: 5%;
     padding-right: 5%;
@@ -23,5 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .footer-logo {
+      background-size: 100% 100%;
+      width: 40px;
+      height: 50px;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
   }
 }

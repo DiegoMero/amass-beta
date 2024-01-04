@@ -5,6 +5,7 @@ import { SlMenu } from "react-icons/sl";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { RxCross1 } from "react-icons/rx";
+import logo from '/public/amass-logo.png';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar() {
   const toggleScrollLock = () => {
     // Obtén el elemento del cuerpo
     const body = document.body;
-    
+
     // Verifica si el mensaje está visible
     if (showMenu) {
       // Desbloquea el scroll al quitar la clase
@@ -30,7 +31,12 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h1>LOGO</h1>
+      <div
+        style={{
+          backgroundImage: `url(${logo.src})`,
+        }}
+        className='logo'
+      />
       <ul className='desktop-menu'>
         <li>
           <Link href="#about">
@@ -56,7 +62,7 @@ export default function Navbar() {
       <SlMenu onClick={toggleMenu} />
       {showMenu && (
         <ul className='mobile-menu'>
-          <li className='exit'><RxCross1 onClick={toggleMenu}/></li>
+          <li className='exit'><RxCross1 onClick={toggleMenu} /></li>
           <li>
             <Link href="#about">
               <h3 onClick={toggleMenu}>Nosotros</h3>

@@ -2,7 +2,7 @@ $tifanny-blue: #75DDDD;
 $blue: #508991;
 $prussian-blue: #172A3A;
 $midnigth-green: #004346;
-$mint: #09BC8A;
+$mint: #326caf;
 
 @media (min-width: 768px) {
   #news {
@@ -51,6 +51,7 @@ $mint: #09BC8A;
     button {
       padding: 1%;
       background-color: $mint;
+      color: white;
       border: none;
       border-radius: 10px;
       font-size: 30px;
@@ -60,7 +61,6 @@ $mint: #09BC8A;
     button:hover {
       background-color: $blue;
       cursor: pointer;
-      color: white;
     }
   }
 }
@@ -110,13 +110,12 @@ $mint: #09BC8A;
       border: none;
       border-radius: 10px;
       font-size: 20px;
+      color: white;
       margin: 5%;
     }
 
     button:active {
       background-color: $blue;
-      cursor: pointer;
-      color: white;
     }
   }
 }
