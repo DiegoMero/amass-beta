@@ -2,7 +2,7 @@ $tifanny-blue: #75DDDD;
 $blue: #508991;
 $prussian-blue: #172A3A;
 $midnigth-green: #004346;
-$mint: #09BC8A;
+$mint: #326caf;
 
 @media (min-width: 768px) {
   #services {
@@ -25,7 +25,7 @@ $mint: #09BC8A;
       .service-container {
         width: auto;
         border-radius: 50px;
-        background-color: #09BC8A;
+        background-color: $mint;
         padding: 2%;
 
         .product-image {
@@ -59,12 +59,12 @@ $mint: #09BC8A;
       border-radius: 10px;
       font-size: 30px;
       margin: 5%;
+      color: white;
     }
 
     button:hover {
       background-color: $blue;
       cursor: pointer;
-      color: white;
     }
   }
 }
@@ -92,7 +92,7 @@ $mint: #09BC8A;
       .service-container {
         width: auto;
         border-radius: 20px;
-        background-color: #09BC8A;
+        background-color: $mint;
         padding: 5%;
 
         .product-image {
@@ -125,13 +125,12 @@ $mint: #09BC8A;
       border: none;
       border-radius: 10px;
       font-size: 25px;
+      color: white;
       margin: 5%;
     }
 
     button:active {
       background-color: $blue;
-      cursor: pointer;
-      color: white;
     }
   }
 }

@@ -2,7 +2,7 @@ $tifanny-blue: #75DDDD;
 $blue: #508991;
 $prussian-blue: #172A3A;
 $midnigth-green: #004346;
-$mint: #09BC8A;
+$mint: #326caf;
 
 @media (min-width: 768px) {
   .header {
@@ -30,6 +30,7 @@ $mint: #09BC8A;
 
     button {
       padding: 1%;
+      color: white;
       background-color: $mint;
       border: none;
       border-radius: 10px;
@@ -73,6 +74,7 @@ $mint: #09BC8A;
       background-color: $mint;
       border: none;
       border-radius: 10px;
+      color: white;
       font-size: 20px;
     }
 

@@ -2,7 +2,7 @@ $tifanny-blue: #75DDDD;
 $blue: #508991;
 $prussian-blue: #172A3A;
 $midnigth-green: #004346;
-$mint: #09BC8A;
+$mint: #326caf;
 
 @media (min-width: 768px) {
   #about {
@@ -54,7 +54,9 @@ $mint: #09BC8A;
     align-items: center;
     background-color: $prussian-blue;
     color: white;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%;
 
     h2 {
       font-size: 30px;
