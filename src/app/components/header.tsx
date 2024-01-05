@@ -12,11 +12,11 @@ export default function Header() {
       }}
       className='header'
     >
-      <h1>Lorem Ipsum</h1>
+      <h1>AMASSTecho</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Integer porttitor est sit amet pharetra blandit. 
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
       </p>
       <button className={inter.className}>Conoce más</button>  
     </section>
