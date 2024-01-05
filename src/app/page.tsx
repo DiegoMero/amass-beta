@@ -1,8 +1,7 @@
 import Navbar from "./components/navbar"
 import Header from "./components/header"
 import About from "./components/about"
-import Services from "./components/services"
-import News from "./components/news"
+import Products from "./components/products"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
 
@@ -13,8 +12,7 @@ export default function Home() {
       <main>
         <Header />
         <About />
-        <Services />
-        <News />
+        <Products />
         <Contact />
       </main>
       <Footer />

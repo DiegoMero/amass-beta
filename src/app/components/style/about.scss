@@ -9,13 +9,13 @@ $mint: #326caf;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $prussian-blue;
-    color: white;
+    background-color: white;
     padding: 5%;
 
     h2 {
       font-size: 40px;
       margin-bottom: 5%;
+      color: black;
     }
 
     div {
@@ -35,12 +35,13 @@ $mint: #326caf;
         h3 {
           margin: 0;
           font-size: 30px;
+          color: white;
         }
 
         p {
           text-align: center;
           font-size: 20px;
-
+          color: white;
         }
       }
     }
@@ -52,14 +53,15 @@ $mint: #326caf;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $prussian-blue;
-    color: white;
+    background-color: white;
+    color: $prussian-blue;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 20%;
 
     h2 {
       font-size: 30px;
+      color: black;
     }
 
     div {
@@ -80,10 +82,12 @@ $mint: #326caf;
         h3 {
           margin: 0;
           font-size: 25px;
+          color: white;
         }
 
         p {
           text-align: center;
+          color: white;
         }
       }
     }

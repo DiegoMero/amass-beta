@@ -16,15 +16,11 @@ export default function Navbar() {
   };
 
   const toggleScrollLock = () => {
-    // Obtén el elemento del cuerpo
     const body = document.body;
-
-    // Verifica si el mensaje está visible
+    
     if (showMenu) {
-      // Desbloquea el scroll al quitar la clase
       body.classList.remove('scroll-lock');
     } else {
-      // Bloquea el scroll al agregar la clase
       body.classList.add('scroll-lock');
     }
   };
@@ -44,13 +40,8 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="#services">
-            <h3>Servicios</h3>
-          </Link>
-        </li>
-        <li>
-          <Link href="#news">
-            <h3>Noticias</h3>
+          <Link href="#products">
+            <h3>Productos</h3>
           </Link>
         </li>
         <li>
@@ -69,13 +60,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#services">
-              <h3 onClick={toggleMenu}>Servicios</h3>
-            </Link>
-          </li>
-          <li>
-            <Link href="#news">
-              <h3 onClick={toggleMenu}>Noticias</h3>
+            <Link href="#products">
+              <h3 onClick={toggleMenu}>Productos</h3>
             </Link>
           </li>
           <li>
