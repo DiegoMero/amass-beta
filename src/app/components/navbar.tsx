@@ -16,15 +16,11 @@ export default function Navbar() {
   };
 
   const toggleScrollLock = () => {
-    // Obtén el elemento del cuerpo
     const body = document.body;
-
-    // Verifica si el mensaje está visible
+    
     if (showMenu) {
-      // Desbloquea el scroll al quitar la clase
       body.classList.remove('scroll-lock');
     } else {
-      // Bloquea el scroll al agregar la clase
       body.classList.add('scroll-lock');
     }
   };
