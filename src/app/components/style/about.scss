@@ -6,43 +6,37 @@ $mint: #326caf;
 
 @media (min-width: 768px) {
   #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 5%;
-
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
     h2 {
+      text-align: center;
       font-size: 40px;
-      margin-bottom: 5%;
-      color: black;
     }
 
-    div {
+    p {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 35px;
+      border-bottom: 1px solid #007BFF;
+    }
+
+    ul {
       display: flex;
+      list-style: none;
+      padding: 0;
       gap: 5%;
 
-      .card {
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5%;
-        background-color: $mint;
-        flex: 1;
-        border-radius: 25px;
-
-        h3 {
-          margin: 0;
-          font-size: 30px;
-          color: white;
-        }
-
-        p {
-          text-align: center;
-          font-size: 20px;
-          color: white;
-        }
+      li {
+        padding: 2.5%;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid #007BFF;
+        font-size: 20px;
       }
     }
   }
@@ -50,45 +44,38 @@ $mint: #326caf;
 
 @media (max-width: 767px) {
   #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    color: $prussian-blue;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 20%;
-
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
     h2 {
+      text-align: center;
       font-size: 30px;
-      color: black;
     }
 
-    div {
+    p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+      border-bottom: 1px solid #007BFF;
+    }
+
+    ul {
       display: flex;
       flex-direction: column;
+      list-style: none;
+      padding: 0;
       gap: 25px;
 
-      .card {
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5%;
-        background-color: $mint;
-        border-radius: 25px;
-        gap: 0;
-
-        h3 {
-          margin: 0;
-          font-size: 25px;
-          color: white;
-        }
-
-        p {
-          text-align: center;
-          color: white;
-        }
+      li {
+        padding: 2.5%;
+        border-radius: 10px;
+        border: 1px solid #007BFF;
+        font-size: 15px;
       }
     }
   }
