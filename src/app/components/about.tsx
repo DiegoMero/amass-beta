@@ -1,29 +1,35 @@
 import './style/about.scss';
 
 export default function About() {
+  const textStyle = {
+    color: '#007BFF',
+    fontWeight: 'bold',
+  };
+
   return (
     <section id='about'>
       <h2>Nosotros</h2>
-      <div>
-        <div className='card'>
-          <h3>Misión</h3>
-          <p>
-            In a nunc et ante bibendum euismod. 
-            Morbi quis vulputate tortor. 
-            Etiam ultricies enim ac diam elementum, nec pretium quam auctor. 
-            Integer eget eros quis velit rutrum sagittis. 
-            Morbi nunc magna, aliquam ac orci eget, mattis aliquet purus.  
-          </p>
-        </div>
-        <div className='card'>
-          <h3>Visión</h3>
-          <p>
-            Duis tempor maximus efficitur. 
-            Donec pharetra risus vel nunc tincidunt dictum. 
-            Curabitur luctus, leo mattis faucibus mollis, nibh nulla finibus leo, sit amet aliquet sem magna nec quam.  
-          </p>
-        </div>
-      </div>
+      <p>
+        AMASS es una empresa comprometida con el crecimiento sostenible y
+        sustentable con la fabricación de productos reciclables y reusables, para
+        crear productos de construcción destinados al uso de la sociedad.
+      </p>
+      <h3>Valores</h3>
+      <ul>
+        <li>
+          <span style={textStyle}>Innovación:</span> Promover la creatividad y la búsqueda constante de nuevas soluciones y tecnologías
+          para mejorar y satisfacer las necesidades del mercado.
+        </li>
+        <li>
+          <span style={textStyle}>Calidad:</span> Compromiso con la excelencia en cada producto o servicio
+          ofrecido, garantizando altos estándares de calidad en todos los aspectos.
+        </li>
+        <li>
+          <span style={textStyle}>Sostenibilidad:</span> Responsabilidad hacia el medio ambiente y la sociedad,
+          promoviendo prácticas y productos sostenibles que minimicen el impacto
+          ambiental.
+        </li>
+      </ul>
     </section>
   )
 }
