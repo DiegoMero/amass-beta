@@ -1,4 +1,7 @@
 import './style/about.scss';
+import Innovacion from '/public/Innovación.png';
+import Calidad from '/public/Calidad.png'
+import Sostenibilidad from '/public/Sostenibilidad.png'
 
 export default function About() {
   const textStyle = {
@@ -17,17 +20,38 @@ export default function About() {
       <h3>Valores</h3>
       <ul>
         <li>
-          <span style={textStyle}>Innovación:</span> Promover la creatividad y la búsqueda constante de nuevas soluciones y tecnologías
-          para mejorar y satisfacer las necesidades del mercado.
+          <div className='innovacion-icon'
+            style={{
+              backgroundImage: `url(${Innovacion.src})`,
+            }}
+          />
+          <>
+            <span style={textStyle}>Innovación:</span> Promover la creatividad y la búsqueda constante de nuevas soluciones y tecnologías
+            para mejorar y satisfacer las necesidades del mercado.
+          </>
         </li>
         <li>
-          <span style={textStyle}>Calidad:</span> Compromiso con la excelencia en cada producto o servicio
-          ofrecido, garantizando altos estándares de calidad en todos los aspectos.
+          <div className='innovacion-icon'
+            style={{
+              backgroundImage: `url(${Calidad.src})`,
+            }}
+          />
+          <>
+            <span style={textStyle}>Calidad:</span> Compromiso con la excelencia en cada producto o servicio
+            ofrecido, garantizando altos estándares de calidad en todos los aspectos.
+          </>
         </li>
         <li>
-          <span style={textStyle}>Sostenibilidad:</span> Responsabilidad hacia el medio ambiente y la sociedad,
-          promoviendo prácticas y productos sostenibles que minimicen el impacto
-          ambiental.
+          <div className='innovacion-icon'
+            style={{
+              backgroundImage: `url(${Sostenibilidad.src})`,
+            }}
+          />
+          <>
+            <span style={textStyle}>Sostenibilidad:</span> Responsabilidad hacia el medio ambiente y la sociedad,
+            promoviendo prácticas y productos sostenibles que minimicen el impacto
+            ambiental.
+          </>
         </li>
       </ul>
     </section>
