@@ -4,10 +4,12 @@ import './style/contact.scss';
 import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import React from 'react';
-import { Inter } from 'next/font/google'
-import map from '/public/pic6.png';
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 export default function Contact() {
   const handleClick = (redireccion: string) => {
@@ -33,7 +35,7 @@ export default function Contact() {
           <input type="text" className='must'></input>
           <label>Mensaje: (Opcional)</label>
           <textarea className='optional'></textarea>
-          <button type='submit' className={inter.className}>Enviar</button>
+          <button type='submit' className={poppins.className}>Enviar</button>
         </form>
         <h3>Conecta con nosotros:</h3>
         <ul>
