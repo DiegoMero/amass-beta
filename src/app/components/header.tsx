@@ -2,9 +2,13 @@
 
 import './style/header.scss';
 import backgroundImage from '/public/pic3.jpg';
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: "400"
+})
+
 
 export default function Header() {
   const phoneNumber = '0992058094';
@@ -27,7 +31,7 @@ export default function Header() {
         eficientes y adaptadas a las necesidades específicas de Manabí y sus sectores productivos, 
         contribuyendo así al desarrollo sostenible y a la construcción de la región.
       </p>
-      <button className={inter.className} onClick={handleContactButtonClick}>Contáctanos</button>
+      <button className={poppins.className} onClick={handleContactButtonClick}>Contáctanos</button>
     </section>
   )
 }

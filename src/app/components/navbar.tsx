@@ -6,6 +6,12 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { RxCross1 } from "react-icons/rx";
 import logo from '/public/amass-logo.png';
+import { Poppins } from "next/font/google"
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: "400"
+})
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,7 +32,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className={poppins.className}>
       <div
         style={{
           backgroundImage: `url(${logo.src})`,

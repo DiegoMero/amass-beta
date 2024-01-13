@@ -4,12 +4,18 @@ import About from "./components/about"
 import Products from "./components/products"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
+import { Poppins } from "next/font/google"
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: "400"
+})
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className={poppins.className}>
         <Header />
         <About />
         <Products />
