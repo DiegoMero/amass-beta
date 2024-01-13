@@ -9,7 +9,7 @@ $mint: #326caf;
     padding-left: 5%;
     padding-right: 5%;
     background-color: $prussian-blue;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
 
     h2 {
       text-align: center;
@@ -26,27 +26,38 @@ $mint: #326caf;
 
     .all-products {
       list-style: none;
-      padding-left: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      row-gap: 10%;
-      column-gap: 2.5%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
 
       .product-card {
-        background-color: $mint;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        gap: 5px;
 
         .product-image {
           background-size: 100% 100%;
-          width: 280.78px;
+          width: auto;
           height: 280.78px;
+          background-color: $mint;
         }
 
-        .product-description {
+        .product-information {
           color: white;
-          list-style: none;
-          padding-left: 0;
           padding: 5%;
+          background-color: $mint;
+          font-size: 17.5px;
+
+          h4 {
+            margin: 0;
+            font-size: 25px;
+          }
+
+          .product-description {
+            list-style: none;
+            padding: 0;
+          }
         }
       }
     }
@@ -75,25 +86,40 @@ $mint: #326caf;
 
     .all-products {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 30px;
 
       .product-card {
-        background-color: $mint;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 5px;
 
         .product-image {
           background-size: 100% 100%;
           width: auto;
-          height: 240px;
+          height: 250px;
+          background-color: $mint;
         }
 
-        .product-description {
+        .product-information {
           color: white;
-          list-style: none;
-          padding-left: 0;
           padding: 5%;
+          background-color: $mint;
+          font-size: 17.5px;
+
+          h4 {
+            margin: 0;
+            font-size: 20px;
+          }
+
+          .product-description {
+            list-style: none;
+            padding: 0;
+            font-size: 15px;
+          }
         }
       }
     }

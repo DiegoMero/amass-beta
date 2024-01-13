@@ -14,15 +14,21 @@ $mint: #326caf;
     h2 {
       text-align: center;
       font-size: 40px;
+      color: $mint;
     }
 
     p {
-      font-size: 25px;
+      font-size: 22.5px;
+      text-align: center;
+      padding-left: 15%;
+      padding-right: 15%;
     }
 
     h3 {
       font-size: 35px;
       border-bottom: 1px solid #007BFF;
+      text-align: center;
+      color: $mint;
     }
 
     ul {
@@ -32,11 +38,10 @@ $mint: #326caf;
       gap: 5%;
 
       li {
+        background-color: $mint;
         padding: 2.5%;
-        text-align: center;
-        border-radius: 50px;
-        border: 1px solid #007BFF;
-        font-size: 20px;
+        font-size: 17.5px;
+        color: white;
       }
     }
   }
@@ -52,16 +57,19 @@ $mint: #326caf;
     h2 {
       text-align: center;
       font-size: 30px;
+      color: $mint;
     }
 
     p {
       text-align: center;
-      font-size: 20px;
+      font-size: 17.5px;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 25px;
       border-bottom: 1px solid #007BFF;
+      text-align: center;
+      color: $mint;
     }
 
     ul {
@@ -73,9 +81,9 @@ $mint: #326caf;
 
       li {
         padding: 2.5%;
-        border-radius: 10px;
-        border: 1px solid #007BFF;
+        background-color: $mint;
         font-size: 15px;
+        color: white;
       }
     }
   }

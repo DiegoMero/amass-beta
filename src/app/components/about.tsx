@@ -2,7 +2,7 @@ import './style/about.scss';
 
 export default function About() {
   const textStyle = {
-    color: '#007BFF',
+    color: 'white',
     fontWeight: 'bold',
   };
 
