@@ -28,19 +28,20 @@ $mint: #326caf;
       list-style: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 35px;
 
       .product-card {
         display: flex;
         flex-direction: column;
-        width: 360px;
+        width: auto;
+        height: auto;
         gap: 5px;
 
         .product-image {
           background-size: 100% 100%;
           width: auto;
-          height: 280.78px;
+          height: 250px;
           background-color: $mint;
         }
 
@@ -49,6 +50,7 @@ $mint: #326caf;
           padding: 5%;
           background-color: $mint;
           font-size: 17.5px;
+          height: 50%;
 
           h4 {
             margin: 0;
