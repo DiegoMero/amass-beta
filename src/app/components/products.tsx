@@ -34,6 +34,11 @@ const perfiles = [
   { image: perfil3, title: 'Perfil de lámina galvanizada' },
 ]
 
+const otros = [
+  { image: perno, title: 'Perno Galvanizado' },
+  { image: remache, title: 'Remache Galvanizado' },
+]
+
 export default function Products() {
   return (
     <section id='products'>
@@ -82,46 +87,28 @@ export default function Products() {
           </li>
         ))}
       </ul>
-      <h3>Pernos</h3>
-      <div className='all-products'>
-        <div className='product-card'>
-          <div className='product-image'
-            style={{
-              backgroundImage: `url(${perno.src})`,
-            }}
-          />
-          <div className='product-information'>
-            <h4>Perno Galvanizado</h4>
-            <ul className='product-description'>
-              <li>Medidas</li>
-              <li>Longitud estándar:</li>
-              <li>3.6m/4.2m/5m/ 6m</li>
-              <li>Otras dimensiones:</li>
-              <li>Bajo pedido.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <h3>Remaches</h3>
-      <div className='all-products'>
-        <div className='product-card'>
-          <div className='product-image'
-            style={{
-              backgroundImage: `url(${remache.src})`,
-            }}
-          />
-          <div className='product-information'>
-            <h4>Remache Galvanizado</h4>
-            <ul className='product-description'>
-              <li>Medidas</li>
-              <li>Longitud estándar:</li>
-              <li>3.6m/4.2m/5m/ 6m</li>
-              <li>Otras dimensiones:</li>
-              <li>Bajo pedido.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <h3>Pernos y Remaches</h3>
+      <ul className='all-products'>
+        {otros.map((producto, index) => (
+          <li key={index} className='product-card'>
+            <div className='product-image'
+              style={{
+                backgroundImage: `url(${producto.image.src})`,
+              }}
+            />
+            <div className='product-information'>
+              <h4>{producto.title}</h4>
+              <ul className='product-description'>
+                <li>Medidas</li>
+                <li>Longitud estándar:</li>
+                <li>3.6m/4.2m/5m/ 6m</li>
+                <li>Otras dimensiones:</li>
+                <li>Bajo pedido.</li>
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
