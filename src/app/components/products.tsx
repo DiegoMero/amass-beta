@@ -3,15 +3,29 @@ import React from 'react';
 import Image1 from '/public/products/techos/techo1.png';
 import Image2 from '/public/products/techos/techo2.png';
 import Image3 from '/public/products/techos/techo3.png';
+import Image4 from '/public/products/techos/techo-rojo.png';
+import Image5 from '/public/products/techos/techo-blanco.png';
+import Image6 from '/public/products/techos/techo-madera.png';
+import Image7 from '/public/products/techos/techo-blanco-liso.png';
+import Image8 from '/public/products/techos/cumbrero.png';
 
 import perfil1 from '/public/products/perfiles/perfil-L.png'
 import perfil2 from '/public/products/perfiles/perfil-U.png'
 import perfil3 from '/public/products/perfiles/Lámina-de-acero.png'
 
+import perno from '/public/products/pernos/perno-autoperforante.png';
+
+import remache from '/public/products/remaches/remache-galvanizado.png';
+
 const techos = [
-  { image: Image1, title: 'AMASSTecho Rojo' },
-  { image: Image2, title: 'AMASSTecho Verde'},
+  { image: Image1, title: 'AMASSTecho Ladrillo' },
+  { image: Image2, title: 'AMASSTecho Verde' },
   { image: Image3, title: 'AMASSTecho Azul' },
+  { image: Image4, title: 'AMASSTecho Rojo' },
+  { image: Image5, title: 'AMASSTecho Blanco' },
+  { image: Image6, title: 'AMASSTecho Madera' },
+  { image: Image7, title: 'AMASSTecho Blanco Liso' },
+  { image: Image8, title: 'Cumbrero' },
 ];
 
 const perfiles = [
@@ -68,6 +82,46 @@ export default function Products() {
           </li>
         ))}
       </ul>
+      <h3>Pernos</h3>
+      <div className='all-products'>
+        <div className='product-card'>
+          <div className='product-image'
+            style={{
+              backgroundImage: `url(${perno.src})`,
+            }}
+          />
+          <div className='product-information'>
+            <h4>Perno Galvanizado</h4>
+            <ul className='product-description'>
+              <li>Medidas</li>
+              <li>Longitud estándar:</li>
+              <li>3.6m/4.2m/5m/ 6m</li>
+              <li>Otras dimensiones:</li>
+              <li>Bajo pedido.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Remaches</h3>
+      <div className='all-products'>
+        <div className='product-card'>
+          <div className='product-image'
+            style={{
+              backgroundImage: `url(${remache.src})`,
+            }}
+          />
+          <div className='product-information'>
+            <h4>Remache Galvanizado</h4>
+            <ul className='product-description'>
+              <li>Medidas</li>
+              <li>Longitud estándar:</li>
+              <li>3.6m/4.2m/5m/ 6m</li>
+              <li>Otras dimensiones:</li>
+              <li>Bajo pedido.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
