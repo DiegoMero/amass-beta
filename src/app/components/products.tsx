@@ -51,7 +51,7 @@ const paneles = [
   },
   { 
     image: panel3, 
-    title: 'Panel EPS de pared tipo sánduche aislante', 
+    title: 'Panel Tipo Liso', 
     description: ['Espesor de lámina: 0.40mm', 'Espesor EPS: 5-10-15cm', 'Longitud estándar: 3m/6m', 'Ancho útil 0.95cm']
   },
   { 
