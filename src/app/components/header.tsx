@@ -1,7 +1,7 @@
 "use client";
 
 import './style/header.scss';
-import backgroundImage from '/public/pic3.jpg';
+import backgroundImage from '/public/Portada-2.png';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
