@@ -39,61 +39,61 @@ const techos = [
 ];
 
 const paneles = [
-  { 
-    image: panel1, 
-    title: 'Panel EPS de techo tipo sánduche aislante', 
+  {
+    image: panel1,
+    title: 'Panel EPS de techo tipo sánduche aislante',
     description: ['Densidad EPS: 10±2 kg/m³', 'Ancho útil 97cm', 'Color: Rojo', 'Espesor lámina superior: 0.52mm', 'Espesor lámina inferior: 0.40mm']
   },
-  { 
-    image: panel2, 
-    title: 'Panel EPS de techo tipo sánduche aislante', 
+  {
+    image: panel2,
+    title: 'Panel EPS de techo tipo sánduche aislante',
     description: ['Densidad EPS: 10±2 kg/m³', 'Ancho útil 97cm', 'Color: Verde', 'Espesor lámina superior: 0.52mm', 'Espesor lámina inferior: 0.40mm']
   },
-  { 
-    image: panel3, 
-    title: 'Panel Tipo Liso', 
+  {
+    image: panel3,
+    title: 'Panel EPS de pared tipo sánduche aislante liso',
     description: ['Espesor de lámina: 0.40mm', 'Espesor EPS: 5-10-15cm', 'Longitud estándar: 3m/6m', 'Ancho útil 0.95cm']
   },
-  { 
-    image: panel4, 
-    title: 'Panel EPS de pared tipo sánduche aislante', 
+  {
+    image: panel4,
+    title: 'Panel EPS de pared tipo sánduche aislante',
     description: ['Espesor de lámina: 0.40mm', 'Espesor EPS: 5-10-15cm', 'Longitud estándar: 3m/6m', 'Ancho útil 0.95cm']
   },
 ];
 
 const perfiles = [
-  { 
-    image: perfil1, 
+  {
+    image: perfil1,
     title: 'Perfil acero galvanizado tipo L',
     description: ['Largo estándar: 3m', 'Medida ideal', 'Espesores: 0.8mm / 2mm / 3mm']
   },
-  { 
-    image: perfil2, 
+  {
+    image: perfil2,
     title: 'Perfil acero galvanizado tipo U',
     description: ['Largo estándar: 3m', 'Medida ideal', 'Espesores: 0.8mm / 2mm / 3mm']
   },
-  { 
-    image: perfil3, 
+  {
+    image: perfil3,
     title: 'Perfil de lámina galvanizada',
     description: ['Largo estándar: 3m', 'Medida ideal', 'Espesor de lámina: 0.40mm']
   },
 ]
 
 const pernosYRemaches = [
-  { 
-    image: perno, 
+  {
+    image: perno,
     title: 'Perno Galvanizado',
     description: ['Medidas:', '19/65/125/180mm']
   },
-  { 
-    image: remache, 
+  {
+    image: remache,
     title: 'Remache Galvanizado',
     description: ['Medidas:', '5x11 - 500 unidades p/caja', '4x13 - 1000 unidades p/caja']
   },
 ]
 
 const otros = [
-  { 
+  {
     image: otro1,
     title: 'Ventanas PVC',
     description: ['Dimensión estándar 1.40m x 1.10m', 'Otras dimensiones bajo pedido']
@@ -107,11 +107,6 @@ const otros = [
     image: otro3,
     title: 'Fibracemento',
     description: ['Espesor: 20mm', 'Placa: 1.2m x 2.4m']
-  },
-  {
-    image: otro4,
-    title: 'Espumaflex',
-    description: ['Medidas:', '40x40x10cm', '40x40x15cm', '40x40x20cm', '1mx 2mx (1-15)cm']
   }
 ]
 
@@ -185,20 +180,20 @@ export default function Products() {
       <ul className='all-products'>
         {pernosYRemaches.map((producto, index) => (
           <li key={index} className='product-card'>
-          <div className='product-image'
-            style={{
-              backgroundImage: `url(${producto.image.src})`,
-            }}
-          />
-          <div className='product-information'>
-            <h4>{producto.title}</h4>
-            <ul className='product-description'>
-              {producto.description.map((description, index) => (
-                <li key={index}>{description}</li>
-              ))}
-            </ul>
-          </div>
-        </li>
+            <div className='product-image'
+              style={{
+                backgroundImage: `url(${producto.image.src})`,
+              }}
+            />
+            <div className='product-information'>
+              <h4>{producto.title}</h4>
+              <ul className='product-description'>
+                {producto.description.map((description, index) => (
+                  <li key={index}>{description}</li>
+                ))}
+              </ul>
+            </div>
+          </li>
         ))}
       </ul>
       <h3>Otros</h3>
@@ -221,6 +216,26 @@ export default function Products() {
           </li>
         ))}
       </ul>
+      <h3>Espumaflex</h3>
+      <div className='all-products'>
+        <div className='product-card'>
+          <div className='product-image'
+            style={{
+              backgroundImage: `url(${otro4.src})`,
+            }}
+          />
+          <div className='product-information'>
+            <h4>Espumaflex</h4>
+            <ul className='product-description'>
+              <li>Medidas:</li>
+              <li>40x40x10cm</li>
+              <li>40x40x15cm</li>
+              <li>40x40x20cm</li>
+              <li>1mx 2mx (1-15)cm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
