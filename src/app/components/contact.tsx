@@ -48,7 +48,7 @@ export default function Contact() {
       <div className='ubication'>
         <h2>Ubicación</h2>
         <p>Encuentra nuestro local más cercano:</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d997.312131228605!2d-80.6358663!3d-0.9683352!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwNTgnMDUuNCJTIDgwwrAzOCcwOC4yIlc!5e0!3m2!1ses!2sec!4v1704466717877!5m2!1ses!2sec" width="100%" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.994839586909!2d-80.6355898!3d-0.968178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be7002767e46b%3A0x8d6bee26ac9d3ba!2sAmass%20Cia.%20Ltda.!5e0!3m2!1sen!2sec!4v1706037222643!5m2!1sen!2sec" width="100%" height="500" loading="lazy"></iframe>
       </div>
     </section>
   )
