@@ -1,8 +1,14 @@
 "use client";
 
 import './style/header.scss';
-import backgroundImage from '/public/2-Portada-WEB-AMASS.png';
+import backgroundImage from '/public/Portada-WEB-AMASS-Recovered.png';
 import { Poppins } from 'next/font/google';
+import { Amaranth } from 'next/font/google';
+
+const amaranth = Amaranth ({
+  subsets: ['latin'],
+  weight: "400"
+})
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,19 +25,19 @@ export default function Header() {
   };
 
   return (
-    <section
-      style={{
-        backgroundImage: `url(${backgroundImage.src})`,
-      }}
-      className='header'
-    >
-      <h1>AMASS Cia. Ltda.</h1>
-      <p>
-        Ofrecemos soluciones de construcción innovadoras, 
-        eficientes y adaptadas a las necesidades específicas de Manabí y sus sectores productivos, 
-        contribuyendo así al desarrollo sostenible y a la construcción de la región.
-      </p>
-      <button className={poppins.className} onClick={handleContactButtonClick}>Contáctanos</button>
+    <section className='header'>
+      <div>
+        <h1>AMASS Cia. Ltda.</h1>
+        <p className={amaranth.className}>Fabricantes directos de espumaflex y Panel EPS tipo sánduche.</p>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage.src})`,
+        }}
+        className='header-background'
+      >
+        <button className={poppins.className} onClick={handleContactButtonClick}>Contáctanos</button>
+      </div>
     </section>
   )
 }
