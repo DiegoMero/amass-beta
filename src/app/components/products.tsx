@@ -114,6 +114,46 @@ export default function Products() {
   return (
     <section id='products'>
       <h2>Productos</h2>
+      <h3>Espumaflex</h3>
+      <div className='all-products'>
+        <div className='product-card'>
+          <div className='product-image'
+            style={{
+              backgroundImage: `url(${otro4.src})`,
+            }}
+          />
+          <div className='product-information'>
+            <h4>Espumaflex</h4>
+            <ul className='product-description'>
+              <li>Medidas:</li>
+              <li>40x40x10cm</li>
+              <li>40x40x15cm</li>
+              <li>40x40x20cm</li>
+              <li>1mx 2mx (1-15)cm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Paneles</h3>
+      <ul className='all-products'>
+        {paneles.map((panel, index) => (
+          <li key={index} className='product-card'>
+            <div className='product-image'
+              style={{
+                backgroundImage: `url(${panel.image.src})`,
+              }}
+            />
+            <div className='product-information'>
+              <h4>{panel.title}</h4>
+              <ul className='product-description'>
+                {panel.description.map((description, index) => (
+                  <li key={index}>{description}</li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
       <h3>Techos</h3>
       <ul className='all-products'>
         {techos.map((techo, index) => (
@@ -131,26 +171,6 @@ export default function Products() {
                 <li>3.6m/4.2m/5m/ 6m</li>
                 <li>Otras dimensiones:</li>
                 <li>Bajo pedido.</li>
-              </ul>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <h3>Paneles</h3>
-      <ul className='all-products'>
-        {paneles.map((panel, index) => (
-          <li key={index} className='product-card'>
-            <div className='product-image'
-              style={{
-                backgroundImage: `url(${panel.image.src})`,
-              }}
-            />
-            <div className='product-information'>
-              <h4>{panel.title}</h4>
-              <ul className='product-description'>
-                {panel.description.map((description, index) => (
-                  <li key={index}>{description}</li>
-                ))}
               </ul>
             </div>
           </li>
@@ -216,26 +236,6 @@ export default function Products() {
           </li>
         ))}
       </ul>
-      <h3>Espumaflex</h3>
-      <div className='all-products'>
-        <div className='product-card'>
-          <div className='product-image'
-            style={{
-              backgroundImage: `url(${otro4.src})`,
-            }}
-          />
-          <div className='product-information'>
-            <h4>Espumaflex</h4>
-            <ul className='product-description'>
-              <li>Medidas:</li>
-              <li>40x40x10cm</li>
-              <li>40x40x15cm</li>
-              <li>40x40x20cm</li>
-              <li>1mx 2mx (1-15)cm</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
   )
 }
