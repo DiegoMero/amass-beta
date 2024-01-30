@@ -26,6 +26,8 @@ import otro1 from '/public/products/otros/Ventana-PVC.png';
 import otro2 from '/public/products/otros/Piso-PVC-Flotante.png';
 import otro3 from '/public/products/otros/Fibracemento.png';
 import otro4 from '/public/products/otros/Espumaflex.png';
+import otro5 from '/public/products/otros/Kiosko.png';
+import otro6 from '/public/products/otros/garita.png';
 
 const techos = [
   { image: Image1, title: 'AMASSTecho Ladrillo' },
@@ -107,6 +109,16 @@ const otros = [
     image: otro3,
     title: 'Fibracemento',
     description: ['Espesor: 20mm', 'Placa: 1.2m x 2.4m']
+  },
+  {
+    image: otro5,
+    title: 'Kiosco Móvil',
+    description: ['Kiosco 3m x 2m', 'Altura frontal 2.45m', 'Caída de techo 2.41m', 'Puerta 1.87m x 0.80m', '100% Móviles, prácticos, recicables y reusables']
+  },
+  {
+    image: otro6,
+    title: 'Garita Móvil',
+    description: ['Garita 3m x 2m', 'Altura frontal 2.46m', 'Caída de techo 2.40m', 'Puerta 1.87m x 0.80m','100% Móviles, prácticos, recicables y reusables']
   }
 ]
 
