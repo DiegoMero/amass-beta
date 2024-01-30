@@ -113,12 +113,12 @@ const otros = [
   {
     image: otro5,
     title: 'Kiosco Móvil',
-    description: ['Kiosco 3m x 2m', 'Altura frontal 2.45m', 'Caída de techo 2.41m', 'Puerta 1.87m x 0.80m', '100% Móviles, prácticos, recicables y reusables']
+    description: ['Kiosco 3m x 2m', 'Altura frontal 2.45m', 'Caída de techo 2.41m', 'Puerta 1.87m x 0.80m', '100% Móviles, prácticos, reciclables y reusables']
   },
   {
     image: otro6,
     title: 'Garita Móvil',
-    description: ['Garita 3m x 2m', 'Altura frontal 2.46m', 'Caída de techo 2.40m', 'Puerta 1.87m x 0.80m','100% Móviles, prácticos, recicables y reusables']
+    description: ['Garita 3m x 2m', 'Altura frontal 2.46m', 'Caída de techo 2.40m', 'Puerta 1.87m x 0.80m','100% Móviles, prácticos, reciclables y reusables']
   }
 ]
 
