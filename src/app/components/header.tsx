@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 
 export default function Header() {
-  const phoneNumber = '0992058094';
+  const phoneNumber = '0983376655';
 
   const handleContactButtonClick = () => {
     const phoneLink = `tel:${phoneNumber}`;
