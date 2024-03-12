@@ -41,7 +41,7 @@ export default function Contact() {
         <ul>
           <li onClick={() => handleClick('https://www.instagram.com/amass.ecuador')}><FaInstagram /><h4>: /amass.ecuador</h4></li>
           <li onClick={() => handleClick('https://www.facebook.com/amass.ecuador')}><FaFacebook /><h4>: /amass.ecuador</h4></li>
-          <li onClick={handleContactButtonClick}><FaPhone /><h4>: +593 99 205 8094</h4></li>
+          <li onClick={handleContactButtonClick}><FaPhone /><h4>: +593 98 337 6655</h4></li>
           <li className='direccion'><CiLocationOn /><h4>: Vía Manta Rocafuerte Ruta 1 S/N, Jaramijó</h4></li>
         </ul>
       </div>
