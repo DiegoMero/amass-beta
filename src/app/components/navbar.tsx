@@ -1,82 +1,30 @@
-"use client";
+"use client"
 
-import './style/navbar.scss';
-import { SlMenu } from "react-icons/sl";
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { RxCross1 } from "react-icons/rx";
-import logo from '/public/amass-logo.png';
-import { Poppins } from "next/font/google"
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: "400"
-})
+import Image from "next/image";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
+import SlideMenu from "./utility/slide-menu";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-    toggleScrollLock();
-  };
+  const [togglemenu, setToggleMenu] = useState(false);
 
-  const toggleScrollLock = () => {
-    const body = document.body;
-    
-    if (showMenu) {
-      body.classList.remove('scroll-lock');
-    } else {
-      body.classList.add('scroll-lock');
-    }
-  };
+  const handleClick = () => {
+    setToggleMenu(!togglemenu);
+  }
 
   return (
-    <nav className={poppins.className}>
-      <div
-        style={{
-          backgroundImage: `url(${logo.src})`,
-        }}
-        className='logo'
-      />
-      <ul className='desktop-menu'>
-        <li>
-          <Link href="#about">
-            <h3>Nosotros</h3>
-          </Link>
-        </li>
-        <li>
-          <Link href="#products">
-            <h3>Productos</h3>
-          </Link>
-        </li>
-        <li>
-          <Link href="#contact">
-            <h3>Contacto</h3>
-          </Link>
-        </li>
-      </ul>
-      <SlMenu onClick={toggleMenu} />
-      {showMenu && (
-        <ul className='mobile-menu'>
-          <li className='exit'><RxCross1 onClick={toggleMenu} /></li>
-          <li>
-            <Link href="#about">
-              <h3 onClick={toggleMenu}>Nosotros</h3>
-            </Link>
-          </li>
-          <li>
-            <Link href="#products">
-              <h3 onClick={toggleMenu}>Productos</h3>
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact">
-              <h3 onClick={toggleMenu}>Contacto</h3>
-            </Link>
-          </li>
-        </ul>
-      )}
-    </nav>
+    <>
+      <nav className="h-[15vh] sticky top-0 bg-mint flex justify-between items-center pl-3 pr-3">
+        <Image
+          src="/logo-blanco.png"
+          width={50}
+          height={40}
+          alt="AMASS Cia. Ltda."
+        />
+        <FiMenu onClick={handleClick} className="text-white  active:bg-[#28568c] p-2 text-5xl rounded-full" />
+      </nav>
+      {togglemenu && <SlideMenu handleClick={handleClick} />}
+    </>
   )
 }

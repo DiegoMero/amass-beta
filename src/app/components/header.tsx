@@ -1,6 +1,5 @@
 "use client";
 
-import './style/header.scss';
 import backgroundImage from '/public/Portada-WEB-AMASS-Recovered.png';
 import { Poppins } from 'next/font/google';
 import { Amaranth } from 'next/font/google';
