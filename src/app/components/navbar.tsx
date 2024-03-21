@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="h-[15vh] sticky top-0 bg-mint flex justify-between items-center pl-3 pr-3 shadow-xl">
+      <nav className="h-[15vh] sticky top-0 bg-mint flex justify-between items-center pl-3 pr-3 shadow-xl z-10">
         <Image
           src="/logo-blanco.png"
           width={40}
