@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function AboutCard({ title, imagen, descripcion }: { title: string; imagen: string; descripcion: string }) {
+export default function AboutCard({ title, imagen, descripcion }: any) {
   return (
     <li className="bg-mint text-white p-2 flex flex-col gap-3">
       <Image
