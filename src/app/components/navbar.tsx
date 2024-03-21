@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="h-[15vh] sticky top-0 bg-mint flex justify-between items-center pl-3 pr-3">
+      <nav className="h-[15vh] sticky top-0 bg-mint flex justify-between items-center pl-3 pr-3 shadow-xl">
         <Image
           src="/logo-blanco.png"
-          width={50}
-          height={40}
+          width={40}
+          height={30}
           alt="AMASS Cia. Ltda."
         />
         <FiMenu onClick={handleClick} className="text-white  active:bg-[#28568c] p-2 text-5xl rounded-full" />

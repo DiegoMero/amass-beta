@@ -14,6 +14,7 @@ const config: Config = {
       'blue': '#508991',
       'tifanny-blue': '#75DDDD',
       'white': '#FFF',
+      'mint-left': '#0DB6EB',
     },
     extend: {
       animation: {
@@ -24,11 +25,6 @@ const config: Config = {
           '0%': { width: '0' },
           '100%': { width: '100%' },
         }
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
