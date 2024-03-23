@@ -3,7 +3,7 @@ import Social from "./utility/social"
 export default function Contact() {
 
   return (
-    <section id='contact' className="p-3">
+    <section id='contacto' className="p-3 mb-10">
       <div className="flex flex-col gap-5">
         <h2 className="text-3xl font-bold pt-10">Contacto</h2>
         <p className="text-xl">¿Necesitas más información? Llena este formulario y uno de nuestros asesores se pondra en contacto contigo.</p>

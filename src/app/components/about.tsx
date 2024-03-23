@@ -20,7 +20,7 @@ export default function About() {
   ];
 
   return (
-    <section className="flex flex-col items-center p-3">
+    <section id="nosotros" className="flex flex-col items-center p-3">
       <h2 className="text-mint text-3xl font-bold pt-20">Nosotros</h2>
       <p className="text-center text-xl pt-8">
         AMASS es una empresa comprometida con el crecimiento sostenible y

@@ -7,7 +7,7 @@ import OtrosProductos from "./utility/otros-productos"
 
 export default function Products() {
   return (
-    <section id='products' className="bg-prussian-blue text-white p-3 pb-20">
+    <section id='productos' className="bg-prussian-blue text-white p-3 pb-20">
       <h2 className="text-3xl text-center font-bold pt-20">Productos</h2>
       <Espumaflex />
       <Paneles />
