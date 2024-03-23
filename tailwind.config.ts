@@ -15,6 +15,7 @@ const config: Config = {
       'tifanny-blue': '#75DDDD',
       'white': '#FFF',
       'mint-left': '#0DB6EB',
+      'black': '#000',
     },
     extend: {
       animation: {
