@@ -9,7 +9,7 @@ export default function ContactButton() {
   };
 
   return (
-    <button onClick={handleContactButtonClick} className="relative rounded-md p-3 text-2xl text-white bg-gradient-to-r from-mint-left to-mint active:bg-mint-left">
+    <button onClick={handleContactButtonClick} className="relative rounded-md p-3 text-2xl text-white bg-mint active:bg-mint-left hover:bg-mint-left">
       Contáctanos
     </button>
   )
