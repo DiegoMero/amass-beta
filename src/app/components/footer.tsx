@@ -1,22 +1,15 @@
-import './style/footer.scss';
-import logo from '/public/amass-logo2.png';
-import { Poppins } from "next/font/google"
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: "400"
-})
+import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className={poppins.className}>
-      <div
-        style={{
-          backgroundImage: `url(${logo.src})`,
-        }}
-        className='footer-logo'
-      />
-      <p>All rights reserved 2024.</p>
+    <footer className="bg-black flex items-center p-3 justify-between h-20">
+      <Image
+          src="/logo-blanco.png"
+          width={40}
+          height={30}
+          alt="AMASS Cia. Ltda."
+        />
+      <p className="text-white">All rights reserved 2024.</p>
     </footer>
   )
 }
