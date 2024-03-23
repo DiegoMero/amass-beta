@@ -26,8 +26,8 @@ export default function Paneles() {
 
   return (
     <div>
-      <h3 className="text-2xl font-semibold pt-8 border-b border-white">Paneles</h3>
-      <ul className="flex flex-col gap-7 pt-5">
+      <h3 className="text-2xl font-semibold pt-8 border-b border-white md:text-3xl">Paneles</h3>
+      <ul className="flex flex-col gap-7 pt-5 md:grid md:grid-cols-4">
         {paneles.map((panel, index) => (
           <ProductCard key={index} producto={panel} />
         ))}

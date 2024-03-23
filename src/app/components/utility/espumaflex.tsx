@@ -9,8 +9,8 @@ export default function Espumaflex() {
 
   return (
     <div>
-      <h3 className="text-2xl font-semibold pt-8 border-b border-white">Espumaflex</h3>
-      <ul className="pt-5">
+      <h3 className="text-2xl font-semibold pt-8 border-b border-white md:text-3xl">Espumaflex</h3>
+      <ul className="pt-5 md:grid md:grid-cols-4">
         <ProductCard  producto={espumaflex} />
       </ul>
     </div>

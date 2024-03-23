@@ -46,8 +46,8 @@ export default function Techos() {
 
   return (
     <div>
-      <h3 className="text-2xl font-semibold pt-8 border-b border-white">Techos</h3>
-      <ul className="flex flex-col gap-7 pt-5">
+      <h3 className="text-2xl font-semibold pt-8 border-b border-white md:text-3xl">Techos</h3>
+      <ul className="flex flex-col gap-7 pt-5 md:grid md:grid-cols-4">
         {techos.map((techo, index) => (
           <ProductCard key={index} producto={techo} />
         ))}

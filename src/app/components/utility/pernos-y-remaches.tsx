@@ -16,8 +16,8 @@ export default function PernosYRemaches() {
 
   return (
     <div>
-      <h3 className="text-2xl font-semibold pt-8 border-b border-white">Pernos y Remaches</h3>
-      <ul className="flex flex-col gap-7 pt-5">
+      <h3 className="text-2xl font-semibold pt-8 border-b border-white md:text-3xl">Pernos y Remaches</h3>
+      <ul className="flex flex-col gap-7 pt-5 md:grid md:grid-cols-4">
         {pernosYRemaches.map((producto, index) => (
           <ProductCard key={index} producto={producto} />
         ))}
